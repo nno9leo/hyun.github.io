@@ -1,10 +1,190 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>First Web Page</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    This is my first HTML page with Github !
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>homepage</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
+    </head>
+    <style>
+        *{
+            margin:0; 
+            padding:0;
+            box-sizing: border-box;
+            outline: none; 
+            border:none;
+            text-decoration: none;
+            text-transform: capitalize;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+        body{
+            background:#999;
+            text-align:center;
+            color: #333;
+            background-image: url(../img/back1.jpg);
+            height: 573px;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        li{
+            list-style: none;
+        }
+        ul li{
+            list-style: none;
+        }
+        h1{
+            float: left;
+        }
+        p{
+            font-size: 15px;
+            color: #000000;
+            text-align: left;
+        }
+        p:not(.in){
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+        }
+        #mainbg{
+            margin-right: auto;
+            margin-left: auto;
+            width:1010px;
+            padding: 0px;
+            background: #60A179;
+            float:none;
+            background-color: #F2F3F7;
+            height: 415px;
+        }
+        .top{
+            height: 140px;
+            line-height: 140px;
+            border-image: url(../img/top3.jpg) ;
+        } 
+        .top img{
+            height: 140px;
+            width: 1010px;
+        }
+        section{
+            padding:0;
+            min-height: 100vh;
+        }
+        .right .row-1{
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5rem;
+            padding-bottom: 2rem;
+        }
+       
+        .right .row-1 .image img{
+            height: auto;
+            
+            object-fit: contain;
+        } 
+        @media (min-width: 600px) {
+        .right .row-1 .image img {
+            max-width: 80%;
+            }
+        }           
+        
+        /*left */
+        .left{
+            float: left;
+            height: 415px;
+            line-height: 415px;
+            margin-right: 8px;
+            border-right: 2px dashed black;
+            margin: 2px 2px 2px 2px;
+            padding: 0px;
+            background: #F2F3F7;
+            width: 200px;
+            text-align:center;
+        }
+        .left li{
+            line-height: 35px;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 15px;
+            color:#fff;
+            margin:1rem 0;
+        }
+        .left li:hover{
+            background-color: #9b8d9e;
+        }
+        .left li a:hover{
+            color: #c9b6bc;
+            letter-spacing: .5rem;
+        }
+        .left a{
+            display: block;
+            width: 200px;
+            height: 65px;
+            font-size: 18px;
+            color: #330033;
+        }
+        .footer p{
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 0px;
+            width: 1010px;
+            height: 22px;
+            line-height: 18px;
+            background-color: #363533;
+            color: #faf8eb;
+            text-align: center;
+            font-size: 8px;
+        }
+        .bili img {
+            width: 40px; 
+            height: auto;
+            margin: 5px; 
+        }   
+        .weibo img {
+            width: 40px; 
+            height: auto;
+            margin: 5px; 
+        }   
+    </style>
+    <body>
+    	<!--top pic-->
+    	<div class="top">
+    		<img src="img/top3.jpg" />
+    	</div>
+          <div id="mainbg">
+           	 <!--left list-->
+            <div class="left">
+ 	          <ul>
+ 	          	<li><a href="cover.html">coverpage<span>></span></a></li>
+ 	          	<li><a href="bandmembers.html">bandmembers<span>></span></a></li>
+ 		        <li><a href="contact.html">contact<span>></span></a></li>
+ 	          </ul>
+            </div>
+        
+         <section class="right" id="right">
+         	<div class="row-1">
+         		<div class="image">
+         			<img src="img/intro.jpg" alt="" width="600" height="400">
+         		</div>
+         		
+           </div>
+           <hr />
+           <p>band brief</p>
+           <p class="in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gummy-Iron Band is a Punk Rock band from Xiamen, Fujian Province, formed in 2018. Current members include lead singer Thunderbolt, guitarist Chicken Ding, bassist puppeteer and drummer Sammi.</p>
+           
+         </section>
+       </div>
+        <a href="https://space.bilibili.com/2020642651?spm_id_from=333.337.0.0" class="bili" id="bili-icon" target="_blank">
+        <img src="img/bili.jpg" alt="bili">
+        </a>
+        <a href="https://weibo.com/u/7672667846" class="weibo" id="weibo-icon" target="_blank">
+        <img src="img/weibo.jpg" alt="weibo" >
+        </a>  
+       
+       <div class="footer">
+            <p>Copyright © 2023. All Rights Reserved.Haowei&nbsp;Yun&nbsp;&nbsp;Made in October of 2023</p>
+     </div>
+ 
+    </body>
 </html>
