@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number  odd  in order (smallest to largest) and their sum</title>
+</head>
+<body>
+
+<script>
+    var num1, num2;
+    var oddNumbers = "";  
+    var sum = 0;  
+
+    while (true) {
+        num1 = prompt("Enter the first number (smaller one):");
+
+        // Check if the first input is a number
+        if (!isNaN(num1)) {
+            while (true) {
+                num2 = prompt("Enter the second number (bigger one):");
+
+                // Check if the second input is a number
+                if (!isNaN(num2)) {
+                    // Check if the second number is bigger than the first 
+                    if (parseInt(num2) > parseInt(num1)) {
+                        for (i = parseInt(num1); i <= parseInt(num2); i++) {
+                            if (i % 2 !== 0) { 
+                                oddNumbers += i + " "; 
+                                sum += i;
+                            }
+                        }
+                        document.write("Odd numbers in the range " + num1 + " to " + num2 + ": " + oddNumbers + "<br>");    
+                        document.write("Sum of odd numbers in the range: " + sum);
+                        
+                        break;
+                    } else {
+                        document.write("Oops! Please enter numbers from small to big.");
+                        // return to prompting for num2.
+                    }
+                } else {
+                    document.write("Oops! Invalid input. Please enter a valid number.");
+                }
+            }
+
+            break; 
+        } else {
+            document.write("Sorry! Please enter a valid number.");
+        }
+    }
+
+</script>
+
+</body>
+</html>

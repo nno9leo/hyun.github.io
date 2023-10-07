@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PS2-1-1</title>
+</head>
+<body>
+
+<script>
+    //get the name
+    var firstName = prompt("Enter your first name:");
+    var lastName = prompt("Enter your last name:");
+    var fullName = firstName + " " + lastName;
+
+    document.write("Your name is " + fullName + "<br>");
+
+    var numberOfChildren = parseInt(prompt("How many children do you have?"));
+    
+    //decide the display accordingly to the number
+    if (numberOfChildren === 0) {
+        document.write("You have no children.");
+    } else if (numberOfChildren === 1) {
+        document.write("You have 1 child.");
+    } else {
+        document.write("You have " + numberOfChildren + " children.");
+    }
+</script>
+
+</body>
+</html>

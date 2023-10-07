@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number compared in order (smallest to largest).</title>
+</head>
+<body>
+
+<script>
+    // Get the first number 
+    var num1 = prompt("Enter the first number:");
+
+    // Check if the first input is number
+    if (isNaN(num1)) {
+        document.write("sorry! Please enter a valid number.");
+    } else {
+        // Get the second number 
+        var num2 = prompt("Enter the second number:");
+
+        // Check if the second input is number
+        if (isNaN(num2)) {
+            document.write("Oops! Invalid input. Please enter a valid number.");
+        } else {
+            // Determine the smaller and larger numbers
+            var smaller, larger;
+            if (num1 < num2) {
+                smaller = num1;
+                larger = num2;
+            } else {
+                smaller = num2;
+                larger = num1;
+            }
+
+            document.write("The numbers in ascending order are: " + smaller + ", " + larger);
+        }
+    }
+</script>
+
+</body>
+</html>

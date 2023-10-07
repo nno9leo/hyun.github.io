@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>f to c or c to f temperature</title>
+</head>
+<body>
+
+<script>
+    // f to c
+    function f_to_c(fahrenheit) {
+        return (fahrenheit - 32) * 5/9;
+    }
+
+    // c to f
+    function c_to_f(celsius) {
+        return (celsius * 9/5) + 32;
+    }
+
+    // Ask for temperature in Fahrenheit
+    var f_input = prompt("Enter a temperature in Fahrenheit:");
+    
+    // Parse the user input as a floating-point number
+    var f_value = parseFloat(f_input);
+
+    // Check if the input is a valid number
+    if (!isNaN(f_value)) {
+        var c_value = f_to_c(f_value);
+        alert(f_value + " Fahrenheit is equal to " + c_value.toFixed(2) + " Celsius.");
+    } else {
+        alert("Sorry. Please enter 0-9 and a decimal point number.");
+    }
+
+    // Ask for temperature in Celsius
+    var c_input = prompt("Enter a temperature in Celsius:");
+    
+    // Parse the user input as a floating-point number
+    var c_value = parseFloat(c_input);
+
+    // Check if the input is a valid number
+    if (!isNaN(c_value)) {
+        var f_value = c_to_f(c_value);
+        alert(c_value + " Celsius is equal to " + f_value.toFixed(2) + " Fahrenheit.");
+    } else {
+        alert("Invalid input. Please enter a valid number.");
+    }
+</script>
+
+</body>
+</html>

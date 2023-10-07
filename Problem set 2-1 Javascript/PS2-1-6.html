@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Numbers in array Less Than Value</title>
+</head>
+<body>
+
+<script>
+    // create the function 
+    function count(array, value) {
+        var result = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] < value) {
+                result++;
+            }
+        }
+        return result;
+    }
+
+    //second Function to create an array, call prebious function count()
+    function displaycount() {
+        
+        var numbers = [3, 98, 30, 28, 9, 12];
+        var value = 30;
+
+        // Call the count() function and display the result
+        var show = count(numbers, value);
+        document.write("Count of numbers less than " + value + ": " + show);
+    }
+
+    displaycount();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Times Table</title>
+</head>
+<body>
+
+<script>
+    function timestable (number) {
+        document.write("<h2>" + number + " Times Table</h2>");
+        for (var i = 1; i <= 12; i++) {
+            var result = number * i;
+            document.write(number + " x " + i + " = " + result + "<br>");
+        
+        }
+       
+    }
+
+    // show the timestable
+    timestable(11);
+
+</script>
+
+</body>
+</html>
